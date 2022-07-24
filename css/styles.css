@@ -50,20 +50,20 @@ ul{
 }
 
 .section {
-    padding: 94px 15px;
-    width: 1200px;
+    padding: 94px 0px;
     margin: 0 auto;
 }
 
 .container{
     margin: 0 auto;
     width: 1200px;
+    padding: 0 15px;
 }
 
 /* HEADER */
 header {
     border-bottom: 1px solid rgba(236, 236, 236, 1);
-    padding: 24px 15px 25px;
+    padding: 24px 0;
 }
 
 .container-header{
@@ -71,6 +71,7 @@ header {
     margin: 0 auto;
     align-items: center;
     width: 1200px;
+    padding: 0 15px;
 }
 
 .logo{
@@ -95,7 +96,6 @@ header {
     list-style-type: none;
     display: flex;
     gap: 50px;
-    /* margin-right: 331px; */
 }
 
 .header-link{
@@ -206,7 +206,7 @@ header {
 
 .what-we-do{
     text-align: center;
-    padding: 0px 15px 94px;
+    padding-bottom: 94px;
 }
 
 .imges-what-we-do{
@@ -221,6 +221,7 @@ header {
 
 .our-team{
     text-align: center;
+    background-color: var(--light-grey);
 }
 
 .team {
@@ -233,12 +234,10 @@ header {
     background: var(--white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    padding-bottom: 30px;
 }
 
-.photo-of-the-participant{
-    width: 270px;
-    margin-bottom: 30px;
+.about-participant{
+    padding: 30px;
 }
 
 .name-of-participant{
@@ -277,10 +276,6 @@ footer{
     margin-bottom: 20px;
 }
 
-address{
-    gap: 9px;
-}
-
 .contact-footer{
     display: inline-block;
     font-weight: 400;
@@ -289,7 +284,7 @@ address{
     font-style: normal;
 }
 
-.contact-footer:nth-last-child(1){
+.li-contact-footer:nth-last-child(2){
     margin-bottom: 9px;
 }
 
@@ -309,13 +304,11 @@ address{
 .filters{
     list-style-type: none;
     display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
-    width: 611px;
-    margin-bottom: 50px;
+    justify-content: center;
+    margin: 0 auto 50px;
 }
 
-.filter{
+.button-filter{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -328,14 +321,17 @@ address{
     border-radius: 4px;
     cursor: pointer;
 }
+.filter:not(:last-child){
+    margin-right: 8px;
+}
 
-.filter:hover,
-.filter:focus{
+.button-filter:hover,
+.button-filter:focus{
     background-color: var(--blue-color);
     color: var(--white);
 }
 
-.filter:active{
+.button-filter:active{
     background-color: var(--blue-color);
     color: var(--white);
 }
@@ -359,6 +355,8 @@ address{
 }
 .project-title{
     padding: 20px 24px;
+    border: 1px solid rgba(238, 238, 238, 1);
+    border-top: none;
 }
 
 .project:nth-child(3n){
@@ -380,6 +378,7 @@ address{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .project-type{
