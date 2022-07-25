@@ -3,6 +3,7 @@
     --blue-color: rgba(33, 150, 243, 1);
     --grey-color: rgba(117, 117, 117, 1);
     --dark-background-color: rgba(47, 48, 58, 1);
+    --dark-background-color-transparent: rgba(47, 48, 58, 0.4);
     --black-color: rgba(33, 33, 33, 1);
     --transparent-white:rgba(255, 255, 255, 0.6);
     --light-grey: rgba(245, 244, 250, 1);
@@ -147,11 +148,22 @@ header {
 /* MAIN */
 .hero{
     background-color: #2F303A;
+    background-image: 
+        linear-gradient(
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4) ), 
+        url(../images/hero-background.jpg);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
+    width: 1600px;
     margin: 0 auto;
+}
+
+.overlay{
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .businessh1{
