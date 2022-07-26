@@ -153,17 +153,12 @@ header {
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4) ), 
         url(../images/hero-background.jpg);
+    background-position: center;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     width: 1600px;
     margin: 0 auto;
-}
-
-.overlay{
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .businessh1{
@@ -205,6 +200,19 @@ header {
     letter-spacing: 0.03em;
     color: var(--grey-color);
     width: 270px;
+}
+
+.principle-icon{
+    width: 270px;
+    height: 120px;
+    padding: 25px 100px;
+}
+
+.principle-icon{
+    width: 270px;
+    height: 120px;
+    background-color: var(--light-grey);
+    margin-bottom: 30px;
 }
 
 .principles-title{
