@@ -274,7 +274,50 @@ header {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--grey-color);
+    margin-bottom: 16px;
 }
+
+.participents-contacts{
+    display: flex;
+}
+
+.participents-contacts > li{
+    margin-right: 10px;
+}
+
+.participents-contacts>li:nth-child(4n){
+    margin-right: 0;
+}
+
+.button-icon{
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.button-icon:hover,
+.button-icon:focus{
+    background-color: var(--blue-color);
+    fill: var(--white);
+}
+
+.icon-contact{
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    display: inline-block;
+}
+
+.icon-contact:hover,
+.icon-contact:focus {
+    fill: red;
+}
+
 /* END OF MAIN */
 /* FOOTER */
 footer{
