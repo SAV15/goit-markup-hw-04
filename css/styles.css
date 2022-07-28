@@ -8,6 +8,7 @@
     --transparent-white:rgba(255, 255, 255, 0.6);
     --light-grey: rgba(245, 244, 250, 1);
     --white: rgba(255, 255, 255, 1);
+    --icon-grey: rgba(175, 177, 184, 1);
 
     /* FONTS */
     --main-font: 'Roboto', sans-serif;
@@ -128,6 +129,14 @@ header {
     letter-spacing: 0.02em;
     text-decoration: none;
     color: var(--grey-color);
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-contact-icon {
+    fill:currentColor;
+    margin-right: 10px;
+
 }
 
 .contact:hover,
@@ -298,24 +307,42 @@ header {
     display: inline-block;
     border-radius: 50%;
     background-color: #fff;
+    color: var(--icon-grey);
 }
 
 .button-icon:hover,
 .button-icon:focus{
+    color: var(--white);
     background-color: var(--blue-color);
-    fill: var(--white);
 }
 
 .icon-contact{
+    
     width: 20px;
     height: 20px;
     align-items: center;
     display: inline-block;
+    fill: currentColor;
 }
 
-.icon-contact:hover,
-.icon-contact:focus {
-    fill: red;
+.clients{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.client{
+    width: 170px;
+    height: 92px;
+    padding: 16px 32px;
+    background: var(--white);
+    border-radius: 4px;
+    border: 1px solid var(--icon-grey);
+}
+
+.clients-icon{
+    width: 106px;
+    height: 60px;
 }
 
 /* END OF MAIN */
