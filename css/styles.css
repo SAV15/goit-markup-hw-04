@@ -177,7 +177,7 @@ header {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
     margin: 0 auto 30px;
 }
 
@@ -187,7 +187,7 @@ header {
     border: 0;
     background: var(--blue-color);
     border-radius: 4px;
-    color: #fff;
+    color: var(--white);
     font-size: 16px;
     line-height: 1.5;
     cursor: pointer;
@@ -216,11 +216,6 @@ header {
     width: 270px;
     height: 120px;
     padding: 25px 100px;
-}
-
-.principle-icon{
-    width: 270px;
-    height: 120px;
     background-color: var(--light-grey);
     margin-bottom: 30px;
 }
@@ -299,20 +294,20 @@ header {
     margin-right: 0;
 }
 
-.button-icon{
+.link-icon{
     width: 44px;
     height: 44px;
-    margin: 0;
-    padding: 0;
     border: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--white);
     color: var(--icon-grey);
 }
 
-.button-icon:hover,
-.button-icon:focus{
+.link-icon:hover,
+.link-icon:focus{
     color: var(--white);
     background-color: var(--blue-color);
 }
@@ -320,7 +315,6 @@ header {
 .icon-contact{    
     width: 20px;
     height: 20px;
-    align-items: center;
     display: inline-block;
     fill: currentColor;
 }
@@ -331,11 +325,12 @@ header {
     justify-content: space-between;
 }
 
-.client{
+.clients-link{
     width: 170px;
     height: 92px;
     padding: 16px 32px;
     background: var(--white);
+    display: inline-block;
     border-radius: 4px;
     border: 1px solid var(--icon-grey);
     color: var(--icon-grey);
@@ -347,8 +342,8 @@ header {
     fill: currentColor;
 }
 
-.client:hover,
-.client:focus{
+.clients-link:hover,
+.clients-link:focus{
     border: 1px solid var(--blue-color);
     color: var(--blue-color);
 }
@@ -401,30 +396,29 @@ footer{
 }
 
 .join-title{
-    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white);
     margin-bottom: 20px;
 }
 
-.button-icon-footer {
+.link-icon-footer {
     width: 44px;
     height: 44px;
-    margin: 0;
-    padding: 0;
     border: none;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50%;
     background-color: var(--transparent1-white);
     color: var(--white);
 }
 
-.button-icon-footer:hover,
-.button-icon-footer:focus {
+.link-icon-footer:hover,
+.link-icon-footer:focus {
     color: var(--white);
     background-color: var(--blue-color);
 }
